@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+  /* Dark Theme */
+  --vd-blue: hsl(235, 21%, 11%);
+  --vdd-blue: hsl(235, 24%, 19%);
+  --lg-blue: hsl(234, 39%, 85%);
+  --lg-blue-hover: hsl(236, 33%, 92%);
+  --dg-blue: hsl(234, 11%, 52%);
+  --vdg-blue: hsl(233, 14%, 35%);
+  --vdg-blue: hsl(237, 14%, 26%);
+
+    /* Light Theme */
+    --vl-gray: hsl(0, 0%, 98%);
+    --vlg-blue: hsl(236, 33%, 92%);
+    --lg-blue: hsl(233, 11%, 84%);
+    --dg-blue: hsl(236, 9%, 61%);
+    --vdg-blue: hsl(235, 19%, 35%);
+    
+    /* ### Primary */
+    --bright-blue: hsl(220, 98%, 61%);
+    --check-background: linear-gradient(to top left,hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+
+
+/* BASE STYLES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;     
+}
+
+
+@media screen and (max-width: 1440px) {
+ body {
+   width: 100%;
+   max-width: 1440px;
+ } 
+}
