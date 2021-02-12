@@ -4,6 +4,9 @@
   padding: 1rem;
   font-weight: 700;
   border-radius: .3rem;
-  color: var(--vlg-blue);
   outline: none;
+}
+
+.addTodo::placeholder {
+  color: var(--dg-blue);
 }

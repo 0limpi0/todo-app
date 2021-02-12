@@ -1,0 +1,41 @@
+main {
+  margin-top: -2rem;
+  padding: 1rem 1.5rem;
+}
+
+.todo-list {
+  box-shadow: 0px 10px 5px 5px rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.todo-item {
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem .5rem;
+  background: white;
+  border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.todo-item:first-child {
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.todo-item:last-child {
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.icon-item {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.icon-item:first-child {
+  border-radius: 50%;
+  background: var(--check-background);
+}

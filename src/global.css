@@ -48,3 +48,8 @@ body {
    max-width: 1440px;
  } 
 }
+
+.App {
+  background: var(--vl-gray);
+  height: 100vh;
+}
