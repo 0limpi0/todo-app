@@ -4,28 +4,60 @@ main {
 }
 
 .todo-list {
-  box-shadow: 0px 10px 5px 5px rgba(0,0,0,.1);
   border-radius: .5rem;
+  display: flex;
+  box-shadow: 0 2px 6px 0 rgba(136, 148, 171, 0.2),
+  0 24px 20px -24px rgba(71, 82, 107, 0.1);
+  flex-wrap: wrap;
 }
 
 .todo-item {
-  font-size: .7rem;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  flex-basis: 100%;
   padding: 1rem .5rem;
   background: white;
   border-bottom:1px solid rgba(0,0,0,.1);
+  font-size: .7rem;
+}
+
+.count-items,
+.clear-completed,
+.categories {
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.count-items,
+.clear-completed {
+  flex-basis: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px 0 rgba(136, 148, 171, 0.2),
+    0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+
+.clear-completed {
+  justify-content: flex-end;
+}
+
+.categories {
+  order: 1;
+}
+
+.categories {
+  justify-content: center;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem; 
+}
+
+.categories > * {
+  padding: 0 .5rem;
 }
 
 .todo-item:first-child {
   border-top-right-radius: .5rem;
   border-top-left-radius: .5rem;
-}
-
-.todo-item:last-child {
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
 }
 
 .icon-item {
@@ -38,4 +70,29 @@ main {
 .icon-item:first-child {
   border-radius: 50%;
   background: var(--check-background);
+}
+
+@media screen and (min-width: 720px) {
+  .count-items,
+  .clear-completed,
+  .categories {
+    flex-basis: calc(100% / 3); 
+  }
+
+  .categories {
+    order: unset; 
+  }
+
+  .count-items,
+  .clear-completed {
+    margin-bottom: unset;
+  }
+
+  .count-items,
+  .clear-completed,
+  .categories {
+    box-shadow: 0 3px 6px 0 rgba(136, 148, 171, 0.2),
+      0 24px 20px -24px rgba(71, 82, 107, 0.1);
+  }
+
 }
